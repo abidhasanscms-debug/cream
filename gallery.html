@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="View real-life product photos and ingredient sourcing in the VelvetGlow Creams digital gallery. Experience botanical skincare transparency.">
+  <title>Skincare Photo Gallery | VelvetGlow Creams</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    .subpage-hero {
+      height: 45vh;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: var(--white);
+      text-align: center;
+    }
+    .subpage-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(46, 37, 27, 0.75);
+      z-index: 1;
+    }
+    .subpage-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .subpage-title {
+      font-size: 3.2rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .breadcrumbs {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/images/logo.jpg" alt="VelvetGlow Creams Logo" class="logo-img">
+        <h1 class="logo-text">VelvetGlow<span>Creams Pvt. Ltd.</span></h1>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero" style="background-image: url('assets/images/banner.jfif');">
+    <div class="subpage-hero-content">
+      <h2 class="subpage-title">Photo Gallery</h2>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;&bull;&nbsp; <span>Gallery</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="gallery-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Visual Experience</span>
+        <h2 class="section-title">VelvetGlow In Photos</h2>
+        <p class="section-description">A close-up look at our premium skincare lineup, organic raw materials, and dermatologist testing labs. Click any photo to view full details.</p>
+      </div>
+      
+      <div class="gallery-grid">
+        <!-- Item 1: gallery 1 -->
+        <div class="gallery-item" data-title="VelvetGlow Luxury Set" data-desc="Our premier botanical face cream and moisturizing care bundle, styled for absolute nourishment." data-img="assets/images/gallery%201.jfif">
+          <img src="assets/images/gallery%201.jfif" alt="VelvetGlow Luxury Set">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">VelvetGlow Luxury Set</h3>
+            <p class="gallery-overlay-desc">Botanical skincare premium bundle</p>
+          </div>
+        </div>
+
+        <!-- Item 2: gallery 2 -->
+        <div class="gallery-item" data-title="Organic Botanicals Sourcing" data-desc="Selecting rich natural seeds, organic roots, and botanical oils directly from verified eco-farms." data-img="assets/images/gallery%202.jfif">
+          <img src="assets/images/gallery%202.jfif" alt="Organic Botanicals Sourcing">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">Organic Botanicals Sourcing</h3>
+            <p class="gallery-overlay-desc">Pure seeds and herbal oils</p>
+          </div>
+        </div>
+
+        <!-- Item 3: gallery 3 -->
+        <div class="gallery-item" data-title="Dermatological Laboratory Testing" data-desc="Formulating in hygienic, state-of-the-art facilities to test allergy responses and skin cell safety." data-img="assets/images/gallery%203.webp">
+          <img src="assets/images/gallery%203.webp" alt="Dermatological Laboratory Testing">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">Laboratory Testing</h3>
+            <p class="gallery-overlay-desc">Dermatologist-tested formulation safety</p>
+          </div>
+        </div>
+
+        <!-- Item 4: product 1 -->
+        <div class="gallery-item" data-title="Radiant Glow Texture" data-desc="A smooth, whipped texture enriched with Kashmiri saffron and micro gold dust, designed for rapid absorption." data-img="assets/images/product%201.jfif">
+          <img src="assets/images/product%201.jfif" alt="Radiant Glow Texture">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">Radiant Glow Texture</h3>
+            <p class="gallery-overlay-desc">Creamy gold face cream whipped blend</p>
+          </div>
+        </div>
+
+        <!-- Item 5: product 2 -->
+        <div class="gallery-item" data-title="Artisanal Cocoa Whipping" data-desc="Double-whipping organic cocoa and shea butter to maximize soft moisture release for dry body profiles." data-img="assets/images/product%202.jfif">
+          <img src="assets/images/product%202.jfif" alt="Artisanal Cocoa Whipping">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">Artisanal Cocoa Whipping</h3>
+            <p class="gallery-overlay-desc">Rich body moisturizer butter whip</p>
+          </div>
+        </div>
+
+        <!-- Item 6: product 3 -->
+        <div class="gallery-item" data-title="Matte Sunscreen Finish" data-desc="Gel-based micro sunscreen particles leave a weightless, invisible matte film over the skin surface." data-img="assets/images/product%203.webp">
+          <img src="assets/images/product%203.webp" alt="Matte Sunscreen Finish">
+          <div class="gallery-overlay">
+            <span class="gallery-overlay-icon"><i class="fa-regular fa-image"></i></span>
+            <h3 class="gallery-overlay-title">Matte Sunscreen Finish</h3>
+            <p class="gallery-overlay-desc">Gel SPF PA+++ invisible shield film</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center" style="margin-bottom: 30px;">
+        <span class="section-subtitle">Newsletter</span>
+        <h2 class="section-title">Join the VelvetGlow Family</h2>
+        <p class="section-description">Subscribe to receive exclusive beauty recipes, early access to new product launches, and luxury skincare discounts.</p>
+      </div>
+      <div class="newsletter-form-wrapper">
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-widget-title">VelvetGlow</h3>
+        <p class="footer-about-text">A premium, dermatologist-tested beauty care line, dedicated to luxury formulations that unveil your skin's inner velvet radiance.</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="index.html">Home</a></li>
+          <li class="footer-link-item"><a href="about.html">About Us</a></li>
+          <li class="footer-link-item"><a href="products.html">Featured Products</a></li>
+          <li class="footer-link-item"><a href="gallery.html">Photo Gallery</a></li>
+          <li class="footer-link-item"><a href="blog.html">Skincare Blog</a></li>
+          <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Skincare Tips</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="blog.html">Morning Routine</a></li>
+          <li class="footer-link-item"><a href="blog.html">Protecting SPF</a></li>
+          <li class="footer-link-item"><a href="blog.html">Barrier Repair</a></li>
+          <li class="footer-link-item"><a href="blog.html">Anti-Aging Guides</a></li>
+          <li class="footer-link-item"><a href="blog.html">Dry Skin Remedies</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Contact Details</h3>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span><a href="mailto:info@velvetglowcreams.com">info@velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-globe"></i></span>
+            <span><a href="http://www.velvetglowcreams.com" target="_blank" rel="noopener">www.velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>24 Beauty Avenue, Kolkata,<br>West Bengal 700001, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VelvetGlow Creams Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

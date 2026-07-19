@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore our luxury skincare catalog including dermatologist-tested face creams, hydrating body lotions, moisturizers, and high-SPF sunscreens.">
+  <title>Luxury Skincare Products | VelvetGlow Creams</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    .subpage-hero {
+      height: 45vh;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: var(--white);
+      text-align: center;
+    }
+    .subpage-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(46, 37, 27, 0.75);
+      z-index: 1;
+    }
+    .subpage-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .subpage-title {
+      font-size: 3.2rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .breadcrumbs {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/images/logo.jpg" alt="VelvetGlow Creams Logo" class="logo-img">
+        <h1 class="logo-text">VelvetGlow<span>Creams Pvt. Ltd.</span></h1>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero" style="background-image: url('assets/images/banner.jfif');">
+    <div class="subpage-hero-content">
+      <h2 class="subpage-title">Luxury Skincare Catalog</h2>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;&bull;&nbsp; <span>Products</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products Catalog Section -->
+  <section class="featured-products section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Skincare Apothecary</span>
+        <h2 class="section-title">Nourish Your Skin</h2>
+        <p class="section-description">Our complete line of scientifically formulated skincare items. Filter by category to find your perfect match.</p>
+      </div>
+      
+      <!-- Products Filters -->
+      <div class="products-filter">
+        <button class="filter-btn active" data-filter="all">All Products</button>
+        <button class="filter-btn" data-filter="face-cream">Face Creams</button>
+        <button class="filter-btn" data-filter="moisturizer">Moisturizers</button>
+        <button class="filter-btn" data-filter="body-lotion">Body Lotions</button>
+        <button class="filter-btn" data-filter="sunscreen">Sunscreens</button>
+      </div>
+      
+      <!-- Products Grid -->
+      <div class="products-grid">
+        
+        <!-- Product 1: Face Cream -->
+        <div class="product-card" data-category="face-cream" 
+             data-name="Radiant Glow Face Cream" 
+             data-price="₹1,299" 
+             data-img="assets/images/product%201.jfif" 
+             data-cat="Face Cream" 
+             data-desc="This luxurious face cream blends saffron extracts with 24k gold dust to intensely brighten skin, reduce dark spots, and provide a velvet-smooth finish." 
+             data-ingredients="Saffron Extract, 24K Gold Dust, Niacinamide, Hyaluronic Acid, Shea Butter." 
+             data-benefits="Brightens complexion, diminishes hyperpigmentation, locks moisture for 24 hours, improves skin elasticity.">
+          <div class="product-img-wrapper">
+            <span class="product-badge new">New</span>
+            <img src="assets/images/product%201.jfif" alt="Radiant Glow Face Cream" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Face Cream</span>
+            <h3 class="product-name">Radiant Glow Face Cream</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹1,299</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Body Lotion -->
+        <div class="product-card" data-category="body-lotion" 
+             data-name="Hydrating Body Lotion" 
+             data-price="₹799" 
+             data-img="assets/images/product%202.jfif" 
+             data-cat="Body Lotion" 
+             data-desc="Our hydrating body lotion contains natural cocoa and shea butter that absorb quickly to soothe dry, flaky skin and leave it with a delicious cocoa aroma." 
+             data-ingredients="Cocoa Butter, Shea Butter, Sweet Almond Oil, Aloe Vera Extract, Vitamin E." 
+             data-benefits="Heals dry patches, absorbs rapidly without greasy residue, restores skin softness, offers long-term hydration.">
+          <div class="product-img-wrapper">
+            <span class="product-badge best-seller">Best Seller</span>
+            <img src="assets/images/product%202.jfif" alt="Hydrating Body Lotion" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Body Lotion</span>
+            <h3 class="product-name">Hydrating Body Lotion</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹799</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Sunscreen -->
+        <div class="product-card" data-category="sunscreen" 
+             data-name="Ultra Sheer Sunscreen" 
+             data-price="₹949" 
+             data-img="assets/images/product%203.webp" 
+             data-cat="Sunscreen" 
+             data-desc="An ultra-light, gel-based sunscreen with SPF 50 PA+++ that shields the skin from UVA and UVB rays while maintaining a fresh, matte, and invisible feel." 
+             data-ingredients="Titanium Dioxide, Zinc Oxide, Green Tea Extract, Hyaluronic Acid, Aloe Juice." 
+             data-benefits="Blocks UVA & UVB rays, water and sweat resistant, zero white cast, controls oil production, hydrates skin.">
+          <div class="product-img-wrapper">
+            <span class="product-badge new">New</span>
+            <img src="assets/images/product%203.webp" alt="Ultra Sheer Sunscreen" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Sunscreen</span>
+            <h3 class="product-name">Ultra Sheer Sunscreen</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹949</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Moisturizer -->
+        <div class="product-card" data-category="moisturizer" 
+             data-name="Intense Moisture Lock Cream" 
+             data-price="₹1,149" 
+             data-img="assets/images/product%201.jfif" 
+             data-cat="Moisturizer" 
+             data-desc="Specially formulated with barrier-repairing ceramides and hyaluronic acid to lock moisture in the skin cells, repairing damaged or dry skin profiles." 
+             data-ingredients="Ceramides NP/AP/EOP, Hyaluronic Acid, Jojoba Oil, Oatmeal Extract, Vitamin B5." 
+             data-benefits="Restores damaged skin barrier, relieves flaking and irritation, keeps skin hydrated for 48 hours, unscented.">
+          <div class="product-img-wrapper">
+            <img src="assets/images/product%201.jfif" alt="Intense Moisture Lock Cream" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Moisturizer</span>
+            <h3 class="product-name">Intense Moisture Lock Cream</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹1,149</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Face Cream -->
+        <div class="product-card" data-category="face-cream" 
+             data-name="Rejuvenating Night Elixir" 
+             data-price="₹1,499" 
+             data-img="assets/images/product%202.jfif" 
+             data-cat="Face Cream" 
+             data-desc="This premium overnight face cream contains stabilized retinol and botanical peptides that speed up cell turnover, helping you wake up with smoother, firmer skin." 
+             data-ingredients="Encapsulated Retinol (0.5%), Peptides, Rosehip Oil, Coenzyme Q10, Hyaluronic Acid." 
+             data-benefits="Fades wrinkles and fine lines, tightens loose skin, improves tone and texture, provides deep cell repair.">
+          <div class="product-img-wrapper">
+            <span class="product-badge best-seller">Best Seller</span>
+            <img src="assets/images/product%202.jfif" alt="Rejuvenating Night Elixir" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Face Cream</span>
+            <h3 class="product-name">Rejuvenating Night Elixir</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-4-half-stroke" style="color: #FFC107;"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹1,499</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 6: Sunscreen -->
+        <div class="product-card" data-category="sunscreen" 
+             data-name="Active Defense Daily Gel SPF 30" 
+             data-price="₹849" 
+             data-img="assets/images/product%203.webp" 
+             data-cat="Sunscreen" 
+             data-desc="A lightweight everyday sunscreen gel enriched with vitamin C and licorice root to protect from UV rays while active ingredients work to fade sunspots." 
+             data-ingredients="Octinoxate, Vitamin C, Licorice Root Extract, Cucumber Juice, Aloe Gel." 
+             data-benefits="Blocks UVA/UVB rays, brightens skin cells, light and cool gel texture, minimizes appearance of sunspots.">
+          <div class="product-img-wrapper">
+            <img src="assets/images/product%203.webp" alt="Active Defense Daily Gel SPF 30" class="product-img">
+            <div class="product-actions">
+              <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
+              <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="product-details">
+            <span class="product-cat">Sunscreen</span>
+            <h3 class="product-name">Active Defense Daily Gel SPF 30</h3>
+            <div class="product-rating">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <div class="product-bottom">
+              <span class="product-price">₹849</span>
+              <a href="#" class="btn-text quick-view-btn">Quick View</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center" style="margin-bottom: 30px;">
+        <span class="section-subtitle">Newsletter</span>
+        <h2 class="section-title">Join the VelvetGlow Family</h2>
+        <p class="section-description">Subscribe to receive exclusive beauty recipes, early access to new product launches, and luxury skincare discounts.</p>
+      </div>
+      <div class="newsletter-form-wrapper">
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-widget-title">VelvetGlow</h3>
+        <p class="footer-about-text">A premium, dermatologist-tested beauty care line, dedicated to luxury formulations that unveil your skin's inner velvet radiance.</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="index.html">Home</a></li>
+          <li class="footer-link-item"><a href="about.html">About Us</a></li>
+          <li class="footer-link-item"><a href="products.html">Featured Products</a></li>
+          <li class="footer-link-item"><a href="gallery.html">Photo Gallery</a></li>
+          <li class="footer-link-item"><a href="blog.html">Skincare Blog</a></li>
+          <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Skincare Tips</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="blog.html">Morning Routine</a></li>
+          <li class="footer-link-item"><a href="blog.html">Protecting SPF</a></li>
+          <li class="footer-link-item"><a href="blog.html">Barrier Repair</a></li>
+          <li class="footer-link-item"><a href="blog.html">Anti-Aging Guides</a></li>
+          <li class="footer-link-item"><a href="blog.html">Dry Skin Remedies</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Contact Details</h3>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span><a href="mailto:info@velvetglowcreams.com">info@velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-globe"></i></span>
+            <span><a href="http://www.velvetglowcreams.com" target="_blank" rel="noopener">www.velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>24 Beauty Avenue, Kolkata,<br>West Bengal 700001, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VelvetGlow Creams Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Product Details Quick View Modal -->
+  <div class="modal">
+    <div class="modal-container">
+      <button class="modal-close-btn" aria-label="Close Modal">&times;</button>
+      <div class="modal-scroll-area">
+        <div class="modal-grid">
+          <div class="modal-img-wrapper">
+            <img src="" alt="" class="modal-img">
+          </div>
+          <div class="modal-info">
+            <span class="modal-cat">Category</span>
+            <h2 class="modal-title">Product Name</h2>
+            <div class="modal-rating-row">
+              <div class="modal-stars">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </div>
+              <span class="modal-reviews-count">(5.0 Rating based on 124 reviews)</span>
+            </div>
+            <div class="modal-price">Price</div>
+            <p class="modal-desc">Detailed product description goes here.</p>
+            
+            <div class="modal-details-tabs">
+              <div class="modal-tab-headers">
+                <button class="modal-tab-btn active" data-tab="ingredients">Ingredients</button>
+                <button class="modal-tab-btn" data-tab="benefits">Benefits</button>
+              </div>
+              <div class="modal-tab-content">
+                <div class="modal-tab-panel active" data-panel="ingredients">
+                  Ingredients text.
+                </div>
+                <div class="modal-tab-panel" data-panel="benefits">
+                  Benefits text.
+                </div>
+              </div>
+            </div>
+            
+            <div class="modal-purchase-row">
+              <div class="modal-qty-selector">
+                <button class="qty-btn qty-minus">&minus;</button>
+                <span class="qty-value">1</span>
+                <button class="qty-btn qty-plus">&plus;</button>
+              </div>
+              <button class="btn btn-primary modal-add-to-cart">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

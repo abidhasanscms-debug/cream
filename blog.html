@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Stay updated with professional skincare tips, raw ingredient benefits, and beauty routines from the VelvetGlow skincare experts.">
+  <title>Skincare Blog & Guides | VelvetGlow Creams</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    .subpage-hero {
+      height: 45vh;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: var(--white);
+      text-align: center;
+    }
+    .subpage-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(46, 37, 27, 0.75);
+      z-index: 1;
+    }
+    .subpage-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .subpage-title {
+      font-size: 3.2rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .breadcrumbs {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+    .blog-page-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      margin-top: 20px;
+    }
+    @media (max-width: 768px) {
+      .blog-page-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/images/logo.jpg" alt="VelvetGlow Creams Logo" class="logo-img">
+        <h1 class="logo-text">VelvetGlow<span>Creams Pvt. Ltd.</span></h1>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero" style="background-image: url('assets/images/banner.jfif');">
+    <div class="subpage-hero-content">
+      <h2 class="subpage-title">Skincare Blog & Guides</h2>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;&bull;&nbsp; <span>Blog</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Page Section -->
+  <section class="blog-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Skincare Apothecary</span>
+        <h2 class="section-title">Beauty Secrets Unveiled</h2>
+        <p class="section-description">Welcome to our library of dermatological knowledge. Read our articles to understand standard skin nourishment routines.</p>
+      </div>
+      
+      <!-- Blog posts Grid (Large format for blog page) -->
+      <div class="blog-page-grid">
+        
+        <!-- Blog Article 1 -->
+        <div class="blog-card">
+          <div class="blog-img-wrapper" style="aspect-ratio: 1.6;">
+            <img src="assets/images/gallery%203.webp" alt="UV Rays Sun Protection" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>July 18, 2026</span>
+              <span>•</span>
+              <span>Sun Protection</span>
+              <span>•</span>
+              <span>5 Min Read</span>
+            </div>
+            <h3 class="blog-title" style="font-size: 1.4rem;"><a href="#">The Golden Rules of Sun Protection: Why SPF is Essential</a></h3>
+            <p class="blog-excerpt">Discover how ultraviolet radiation damages skin cells, why mineral sunblock offers superior physical shielding, and crucial tips for choosing the right sunscreen factor to prevent sunspots and aging skin profiles...</p>
+            <a href="#" class="btn-text">Read Full Article</a>
+          </div>
+        </div>
+
+        <!-- Blog Article 2 -->
+        <div class="blog-card">
+          <div class="blog-img-wrapper" style="aspect-ratio: 1.6;">
+            <img src="assets/images/gallery%201.jfif" alt="Skincare routine bottles" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>June 24, 2026</span>
+              <span>•</span>
+              <span>Skin Science</span>
+              <span>•</span>
+              <span>7 Min Read</span>
+            </div>
+            <h3 class="blog-title" style="font-size: 1.4rem;"><a href="#">Understanding Your Skin Type: Tailor Your Routine</a></h3>
+            <p class="blog-excerpt">Not all skin profiles respond well to the same cosmetic products. Identify if your skin profile is dry, oily, combinations, or normal, and learn which moisturizers can restore your natural lipid balance...</p>
+            <a href="#" class="btn-text">Read Full Article</a>
+          </div>
+        </div>
+
+        <!-- Blog Article 3 -->
+        <div class="blog-card">
+          <div class="blog-img-wrapper" style="aspect-ratio: 1.6;">
+            <img src="assets/images/product%202.jfif" alt="Cocoa butter lotion" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>May 10, 2026</span>
+              <span>•</span>
+              <span>Key Ingredients</span>
+              <span>•</span>
+              <span>4 Min Read</span>
+            </div>
+            <h3 class="blog-title" style="font-size: 1.4rem;"><a href="#">The Hydration Heroes: Ceramides & Hyaluronic Acid</a></h3>
+            <p class="blog-excerpt">Deep dive into how ceramides and hyaluronic acid seal moisture in your skin cells, maintaining elasticity and preventing fine lines. Learn standard combinations for dry body skin relief...</p>
+            <a href="#" class="btn-text">Read Full Article</a>
+          </div>
+        </div>
+
+        <!-- Blog Article 4 -->
+        <div class="blog-card">
+          <div class="blog-img-wrapper" style="aspect-ratio: 1.6;">
+            <img src="assets/images/gallery%202.jfif" alt="Herbs and seeds oil extraction" class="blog-img">
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>April 15, 2026</span>
+              <span>•</span>
+              <span>Organic Sourcing</span>
+              <span>•</span>
+              <span>6 Min Read</span>
+            </div>
+            <h3 class="blog-title" style="font-size: 1.4rem;"><a href="#">Artisanal Skincare: Sourcing Organic Raw Botanicals</a></h3>
+            <p class="blog-excerpt">A sneak peek into how VelvetGlow Creams Pvt. Ltd. sources natural plant butter, floral oils, and herbal roots from organic-certified farms to deliver pure luxury wellness to our customers...</p>
+            <a href="#" class="btn-text">Read Full Article</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center" style="margin-bottom: 30px;">
+        <span class="section-subtitle">Newsletter</span>
+        <h2 class="section-title">Join the VelvetGlow Family</h2>
+        <p class="section-description">Subscribe to receive exclusive beauty recipes, early access to new product launches, and luxury skincare discounts.</p>
+      </div>
+      <div class="newsletter-form-wrapper">
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-widget-title">VelvetGlow</h3>
+        <p class="footer-about-text">A premium, dermatologist-tested beauty care line, dedicated to luxury formulations that unveil your skin's inner velvet radiance.</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="index.html">Home</a></li>
+          <li class="footer-link-item"><a href="about.html">About Us</a></li>
+          <li class="footer-link-item"><a href="products.html">Featured Products</a></li>
+          <li class="footer-link-item"><a href="gallery.html">Photo Gallery</a></li>
+          <li class="footer-link-item"><a href="blog.html">Skincare Blog</a></li>
+          <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Skincare Tips</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="blog.html">Morning Routine</a></li>
+          <li class="footer-link-item"><a href="blog.html">Protecting SPF</a></li>
+          <li class="footer-link-item"><a href="blog.html">Barrier Repair</a></li>
+          <li class="footer-link-item"><a href="blog.html">Anti-Aging Guides</a></li>
+          <li class="footer-link-item"><a href="blog.html">Dry Skin Remedies</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Contact Details</h3>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span><a href="mailto:info@velvetglowcreams.com">info@velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-globe"></i></span>
+            <span><a href="http://www.velvetglowcreams.com" target="_blank" rel="noopener">www.velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>24 Beauty Avenue, Kolkata,<br>West Bengal 700001, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VelvetGlow Creams Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

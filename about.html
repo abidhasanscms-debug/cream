@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about the brand story, scientific formulation, and ethical commitments of VelvetGlow Creams Pvt. Ltd., your trusted source for premium skincare.">
+  <title>About Us | VelvetGlow Creams</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpg" href="assets/images/logo.jpg">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    .subpage-hero {
+      height: 45vh;
+      min-height: 300px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      color: var(--white);
+      text-align: center;
+    }
+    .subpage-hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(46, 37, 27, 0.75);
+      z-index: 1;
+    }
+    .subpage-hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    .subpage-title {
+      font-size: 3.2rem;
+      color: var(--white);
+      margin-bottom: 12px;
+    }
+    .breadcrumbs {
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--gold-primary);
+      font-weight: 600;
+    }
+    .philosophy-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      margin-top: 50px;
+    }
+    .philosophy-card {
+      background-color: var(--white);
+      padding: 40px 30px;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-sm);
+      border: 1px solid rgba(230, 220, 210, 0.2);
+      text-align: center;
+      transition: var(--transition-medium);
+    }
+    .philosophy-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--gold-primary);
+    }
+    .philosophy-icon {
+      font-size: 2.2rem;
+      color: var(--gold-primary);
+      margin-bottom: 20px;
+    }
+    .philosophy-title {
+      font-size: 1.25rem;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .philosophy-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+    .story-section {
+      background-color: var(--white);
+    }
+    .story-timeline {
+      max-width: 800px;
+      margin: 60px auto 0 auto;
+      position: relative;
+    }
+    .story-timeline::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 2px;
+      height: 100%;
+      background-color: var(--gold-light);
+    }
+    .timeline-item {
+      margin-bottom: 40px;
+      position: relative;
+      width: 50%;
+      padding: 0 40px;
+    }
+    .timeline-item:nth-child(odd) {
+      left: 0;
+      text-align: right;
+    }
+    .timeline-item:nth-child(even) {
+      left: 50%;
+      text-align: left;
+    }
+    .timeline-dot {
+      position: absolute;
+      top: 6px;
+      width: 16px;
+      height: 16px;
+      background-color: var(--gold-primary);
+      border: 3px solid var(--white);
+      border-radius: var(--radius-full);
+      box-shadow: var(--shadow-sm);
+      z-index: 5;
+    }
+    .timeline-item:nth-child(odd) .timeline-dot {
+      right: -8px;
+    }
+    .timeline-item:nth-child(even) .timeline-dot {
+      left: -8px;
+    }
+    .timeline-year {
+      font-family: var(--font-serif);
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--gold-primary);
+      margin-bottom: 6px;
+    }
+    .timeline-title {
+      font-size: 1.1rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .timeline-desc {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      font-weight: 300;
+    }
+    @media (max-width: 768px) {
+      .philosophy-grid {
+        grid-template-columns: 1fr;
+      }
+      .story-timeline::before {
+        left: 20px;
+      }
+      .timeline-item {
+        width: 100%;
+        left: 0 !important;
+        padding-left: 45px;
+        padding-right: 0;
+        text-align: left !important;
+      }
+      .timeline-dot {
+        left: 12px !important;
+      }
+      .subpage-title {
+        font-size: 2.4rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container nav-container">
+      <a href="index.html" class="logo-wrapper">
+        <img src="assets/images/logo.jpg" alt="VelvetGlow Creams Logo" class="logo-img">
+        <h1 class="logo-text">VelvetGlow<span>Creams Pvt. Ltd.</span></h1>
+      </a>
+      
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="about.html" class="nav-link">About Us</a></li>
+          <li><a href="products.html" class="nav-link">Products</a></li>
+          <li><a href="gallery.html" class="nav-link">Gallery</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      
+      <button class="mobile-menu-toggle" aria-label="Toggle Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Subpage Hero -->
+  <section class="subpage-hero" style="background-image: url('assets/images/banner.jfif');">
+    <div class="subpage-hero-content">
+      <h2 class="subpage-title">Our Brand Story</h2>
+      <div class="breadcrumbs">
+        <a href="index.html">Home</a> &nbsp;&bull;&nbsp; <span>About Us</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Story Details Section -->
+  <section class="story-section section-padding">
+    <div class="container">
+      <div class="about-grid" style="align-items: flex-start;">
+        <div class="about-content" style="padding-left: 0;">
+          <span class="section-subtitle">Our History</span>
+          <h2 class="section-title" style="text-align: left; margin-bottom: 20px;">The Journey of VelvetGlow</h2>
+          <p class="about-paragraph">Founded in Kolkata, VelvetGlow Creams Pvt. Ltd. began as a passion project of a small group of skin scientists and organic chemists. Our mission was simple: to create premium, luxury-grade face creams and body moisturizers without compromising on chemical safety or environmental ethics.</p>
+          <p class="about-paragraph">Over the years, we have expanded our research laboratories to refine standard skin care formulas, incorporating natural plant-based lipids, natural vitamins, and sunscreen factors. Today, we are proud to offer a highly successful product line featuring deep skin moisturizers, brightening creams, and broad-spectrum sunscreens that suit various skin tones and weather conditions.</p>
+          <p class="about-paragraph">From formulation to bottling, our standards remain absolute. We select only the highest grade botanicals, test rigorously in dermatological laboratories, and bottle in eco-friendly glass containers to deliver the purest, most luxurious skincare products available on the market.</p>
+        </div>
+        <div class="about-img-wrapper">
+          <img src="assets/images/gallery%201.jfif" alt="Manufacturing process" class="about-img-main">
+        </div>
+      </div>
+      
+      <!-- Brand Timeline -->
+      <div class="story-timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2020</div>
+          <h4 class="timeline-title">The Spark of Creation</h4>
+          <p class="timeline-desc">VelvetGlow was established in Kolkata with a mission to develop botanical skincare products backed by scientific research.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2022</div>
+          <h4 class="timeline-title">Signature Product Launch</h4>
+          <p class="timeline-desc">Introduced our signature Radiant Glow Face Cream, blending premium saffron extracts with gold dust, gaining immediate praise.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2024</div>
+          <h4 class="timeline-title">Expansion of Care Line</h4>
+          <p class="timeline-desc">Expanded our product categories to include lightweight body moisturizers and high-performance sunscreens, opening new eco-packaging labs.</p>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-year">2026</div>
+          <h4 class="timeline-title">National Skincare Recognition</h4>
+          <p class="timeline-desc">Reaching over 100,000 active customers across India, VelvetGlow is recognized as a leader in premium, clean skincare wellness.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Brand Philosophy Section -->
+  <section class="categories-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center">
+        <span class="section-subtitle">Our Pillars</span>
+        <h2 class="section-title">The VelvetGlow Philosophy</h2>
+        <p class="section-description">Every recipe we blend is guided by three fundamental pillars to ensure your skin receives nothing short of perfection.</p>
+      </div>
+      
+      <div class="philosophy-grid">
+        <div class="philosophy-card glass-card">
+          <div class="philosophy-icon"><i class="fa-solid fa-gem"></i></div>
+          <h3 class="philosophy-title">Luxury Quality</h3>
+          <p class="philosophy-desc">We search the globe for premium organic botanicals, high-grade vitamins, and nourishing oils. We do not compromise on ingredient quality.</p>
+        </div>
+        
+        <div class="philosophy-card glass-card">
+          <div class="philosophy-icon"><i class="fa-solid fa-flask"></i></div>
+          <h3 class="philosophy-title">Scientific Purity</h3>
+          <p class="philosophy-desc">Our formulations are crafted by cosmetic scientists. We remove questionable synthetics, ensuring our recipes are clean and safe for all skin types.</p>
+        </div>
+        
+        <div class="philosophy-card glass-card">
+          <div class="philosophy-icon"><i class="fa-solid fa-leaf"></i></div>
+          <h3 class="philosophy-title">Ethical Commitment</h3>
+          <p class="philosophy-desc">Cruelty-free, vegan-friendly, and packaged with materials that respect the Earth. We believe beautiful skin shouldn't harm the planet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="newsletter-section section-padding">
+    <div class="container">
+      <div class="section-title-wrapper text-center" style="margin-bottom: 30px;">
+        <span class="section-subtitle">Newsletter</span>
+        <h2 class="section-title">Join the VelvetGlow Family</h2>
+        <p class="section-description">Subscribe to receive exclusive beauty recipes, early access to new product launches, and luxury skincare discounts.</p>
+      </div>
+      <div class="newsletter-form-wrapper">
+        <form class="newsletter-form">
+          <input type="email" class="newsletter-input" placeholder="Enter your email address" required aria-label="Email Address">
+          <button type="submit" class="newsletter-btn">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3 class="footer-widget-title">VelvetGlow</h3>
+        <p class="footer-about-text">A premium, dermatologist-tested beauty care line, dedicated to luxury formulations that unveil your skin's inner velvet radiance.</p>
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-icon" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Pinterest"><i class="fa-brands fa-pinterest-p"></i></a>
+          <a href="#" class="footer-social-icon" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="index.html">Home</a></li>
+          <li class="footer-link-item"><a href="about.html">About Us</a></li>
+          <li class="footer-link-item"><a href="products.html">Featured Products</a></li>
+          <li class="footer-link-item"><a href="gallery.html">Photo Gallery</a></li>
+          <li class="footer-link-item"><a href="blog.html">Skincare Blog</a></li>
+          <li class="footer-link-item"><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Skincare Tips</h3>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="blog.html">Morning Routine</a></li>
+          <li class="footer-link-item"><a href="blog.html">Protecting SPF</a></li>
+          <li class="footer-link-item"><a href="blog.html">Barrier Repair</a></li>
+          <li class="footer-link-item"><a href="blog.html">Anti-Aging Guides</a></li>
+          <li class="footer-link-item"><a href="blog.html">Dry Skin Remedies</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h3 class="footer-widget-title">Contact Details</h3>
+        <ul class="footer-contact-list">
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-phone"></i></span>
+            <span>+91 98765 43210</span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-envelope"></i></span>
+            <span><a href="mailto:info@velvetglowcreams.com">info@velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-globe"></i></span>
+            <span><a href="http://www.velvetglowcreams.com" target="_blank" rel="noopener">www.velvetglowcreams.com</a></span>
+          </li>
+          <li class="footer-contact-item">
+            <span class="footer-contact-icon"><i class="fa-solid fa-location-dot"></i></span>
+            <span>24 Beauty Avenue, Kolkata,<br>West Bengal 700001, India</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p>&copy; 2026 VelvetGlow Creams Pvt. Ltd. All rights reserved.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Sitemap</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
