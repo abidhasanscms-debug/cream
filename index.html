@@ -12,6 +12,88 @@
   <!-- Google Fonts & FontAwesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <style>
+    /* Styling overrides for text-only homepage layout */
+    .logo-text-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-full);
+      border: 1px solid var(--gold-primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-serif);
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: var(--gold-primary);
+      background-color: var(--white);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .about-quote-block {
+      padding: 60px 40px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(197, 160, 89, 0.2);
+      background: var(--white);
+    }
+    
+    .quote-mark {
+      font-family: var(--font-serif);
+      font-size: 5rem;
+      color: var(--gold-light);
+      line-height: 1;
+      margin-bottom: -15px;
+    }
+    
+    .quote-text {
+      font-family: var(--font-serif);
+      font-size: 1.4rem;
+      font-style: italic;
+      color: var(--text-dark);
+      line-height: 1.6;
+      margin-bottom: 25px;
+    }
+    
+    .product-text-badge-wrapper {
+      background-color: var(--secondary-cream);
+      height: 160px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 1px solid rgba(230, 220, 210, 0.3);
+      transition: var(--transition-medium);
+    }
+    
+    .product-card:hover .product-text-badge-wrapper {
+      background-color: var(--gold-light);
+    }
+    
+    .product-text-icon {
+      font-size: 2.8rem;
+      color: var(--gold-primary);
+      transition: var(--transition-medium);
+    }
+    
+    .product-card:hover .product-text-icon {
+      transform: scale(1.1);
+      color: var(--gold-hover);
+    }
+    
+    .product-text-badge-wrapper .product-actions {
+      bottom: -60px;
+    }
+    
+    .product-card:hover .product-text-badge-wrapper .product-actions {
+      bottom: 0;
+    }
+  </style>
 </head>
 <body>
 
@@ -19,7 +101,7 @@
   <header>
     <div class="container nav-container">
       <a href="index.html" class="logo-wrapper">
-        <img src="assets/images/logo.jpg" alt="VelvetGlow Creams Logo" class="logo-img">
+        <div class="logo-text-icon">VG</div>
         <h1 class="logo-text">VelvetGlow<span>Creams Pvt. Ltd.</span></h1>
       </a>
       
@@ -42,8 +124,8 @@
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" style="background-image: url('assets/images/banner.jfif');">
+  <!-- Hero Section (Text & Gradient Background Only) -->
+  <section class="hero" style="background: linear-gradient(135deg, #2E251B 0%, #4A3E3D 50%, #1E1710 100%);">
     <div class="container">
       <div class="hero-content">
         <span class="hero-subtitle">Premium Skincare Solutions</span>
@@ -57,12 +139,13 @@
     </div>
   </section>
 
-  <!-- About Us Section -->
+  <!-- About Us Section (Text Only) -->
   <section class="about-section section-padding">
     <div class="container about-grid">
-      <div class="about-img-wrapper">
-        <img src="assets/images/gallery%202.jfif" alt="Natural luxury ingredients" class="about-img-main">
-        <div class="about-img-badge glass-card">
+      <div class="about-quote-block glass-card">
+        <div class="quote-mark">“</div>
+        <p class="quote-text">True skin health is achieved when pure botanical extracts meet clinical science. We formulate to enrich, hydrate, and protect.</p>
+        <div class="about-img-badge glass-card" style="position: static; box-shadow: none; border-color: transparent;">
           <span class="number">100%</span>
           <span class="label">Organic & Vegan</span>
         </div>
@@ -121,7 +204,7 @@
     </div>
   </section>
 
-  <!-- Featured Products Section -->
+  <!-- Featured Products Section (Text Icon Cards) -->
   <section class="featured-products section-padding">
     <div class="container">
       <div class="section-title-wrapper text-center">
@@ -140,9 +223,9 @@
              data-desc="This luxurious face cream blends saffron extracts with 24k gold dust to intensely brighten skin, reduce dark spots, and provide a velvet-smooth finish." 
              data-ingredients="Saffron Extract, 24K Gold Dust, Niacinamide, Hyaluronic Acid, Shea Butter." 
              data-benefits="Brightens complexion, diminishes hyperpigmentation, locks moisture for 24 hours, improves skin elasticity.">
-          <div class="product-img-wrapper">
+          <div class="product-text-badge-wrapper">
             <span class="product-badge new">New</span>
-            <img src="assets/images/product%201.jfif" alt="Radiant Glow Face Cream" class="product-img">
+            <span class="product-text-icon"><i class="fa-solid fa-sparkles"></i></span>
             <div class="product-actions">
               <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
               <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -174,9 +257,9 @@
              data-desc="Our hydrating body lotion contains natural cocoa and shea butter that absorb quickly to soothe dry, flaky skin and leave it with a delicious cocoa aroma." 
              data-ingredients="Cocoa Butter, Shea Butter, Sweet Almond Oil, Aloe Vera Extract, Vitamin E." 
              data-benefits="Heals dry patches, absorbs rapidly without greasy residue, restores skin softness, offers long-term hydration.">
-          <div class="product-img-wrapper">
+          <div class="product-text-badge-wrapper">
             <span class="product-badge best-seller">Best Seller</span>
-            <img src="assets/images/product%202.jfif" alt="Hydrating Body Lotion" class="product-img">
+            <span class="product-text-icon"><i class="fa-solid fa-droplet"></i></span>
             <div class="product-actions">
               <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
               <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -208,9 +291,9 @@
              data-desc="An ultra-light, gel-based sunscreen with SPF 50 PA+++ that shields the skin from UVA and UVB rays while maintaining a fresh, matte, and invisible feel." 
              data-ingredients="Titanium Dioxide, Zinc Oxide, Green Tea Extract, Hyaluronic Acid, Aloe Juice." 
              data-benefits="Blocks UVA & UVB rays, water and sweat resistant, zero white cast, controls oil production, hydrates skin.">
-          <div class="product-img-wrapper">
+          <div class="product-text-badge-wrapper">
             <span class="product-badge new">New</span>
-            <img src="assets/images/product%203.webp" alt="Ultra Sheer Sunscreen" class="product-img">
+            <span class="product-text-icon"><i class="fa-solid fa-sun"></i></span>
             <div class="product-actions">
               <button class="product-action-btn quick-view-btn" title="Quick View"><i class="fa-regular fa-eye"></i></button>
               <button class="product-action-btn" title="Add to Wishlist"><i class="fa-regular fa-heart"></i></button>
@@ -347,7 +430,7 @@
     </div>
   </section>
 
-  <!-- Blog Section Preview -->
+  <!-- Blog Section Preview (Text Only Cards) -->
   <section class="blog-section section-padding">
     <div class="container">
       <div class="section-title-wrapper text-center">
@@ -359,9 +442,6 @@
       <div class="blog-grid">
         <!-- Blog 1 -->
         <div class="blog-card">
-          <div class="blog-img-wrapper">
-            <img src="assets/images/gallery%203.webp" alt="Skincare Routine" class="blog-img">
-          </div>
           <div class="blog-content">
             <div class="blog-meta">
               <span>July 18, 2026</span>
@@ -376,9 +456,6 @@
         
         <!-- Blog 2 -->
         <div class="blog-card">
-          <div class="blog-img-wrapper">
-            <img src="assets/images/gallery%201.jfif" alt="Natural Sunscreen" class="blog-img">
-          </div>
           <div class="blog-content">
             <div class="blog-meta">
               <span>June 24, 2026</span>
@@ -393,9 +470,6 @@
         
         <!-- Blog 3 -->
         <div class="blog-card">
-          <div class="blog-img-wrapper">
-            <img src="assets/images/product%202.jfif" alt="Moisture Barrier" class="blog-img">
-          </div>
           <div class="blog-content">
             <div class="blog-meta">
               <span>May 10, 2026</span>
